@@ -132,7 +132,7 @@ export async function deployPreview(
 
   const deploymentText = await execWithCredentials(
     [
-      "hosting:channel:deploy",
+      "hosting:functions:channel:deploy",
       channelId,
       ...(target ? ["--only", target] : []),
       ...(expires ? ["--expires", expires] : []),
